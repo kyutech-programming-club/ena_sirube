@@ -1,0 +1,25 @@
+/**/
+
+h1 {
+  /* background:#006400;背景色 */
+  padding: 0.5em; /*文字まわり（上下左右）の余白*/
+}
+
+h3 {
+  /* background:#2e8b57; */
+  padding:0.2em;
+}
+
+.darkgreen {
+  /* color: #006400; */
+  color: #556b2f;
+}
+
+body {
+  background:#000000;
+  color:#00ff00;
+}
+
+.margin {
+  padding: 5%;
+}

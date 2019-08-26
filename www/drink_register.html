@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="components/loader.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="components/loader.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascript/app.js"></script>
+	<!-- google map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=APIKEY"></script>
+	<script type="text/javascript" charset="utf-8" src="javascript/googlemap.js"></script>
+</head>
+
+<body>
+	<center style="margin-top: 10px;">
+		<img src="images/newdrug.png">
+	</center>
+	<div id="newDrink" class="container">
+		<h3>Drugs</h3>
+		<form id="drinkCheck" name="drinkList"></form>
+    <button onclick="deleteCheckedDrink()" class="btn btn-danger btn-lg" style="color:white; float: right;">Delete</button>
+		<br>
+		<form id="drinkForm" name="drinkForm">
+			<h3>Drug name</h3>
+			<input type="Text" name="drinkName">
+		</form>
+		<br>
+		<button onclick="createDrinkKind()" class="btn btn-default btn-lg" style="background-color:#990000; color:white;">Add drug</button>
+	</div>
+
+	<div style="margin-top: 30px;">
+		<a href="index.html" class="btn btn-default btn-lg" style="float: left; background-color:#3cb371; color:white;">Top</a>
+		</left>
+		<a href="shop_register.html" class="btn btn-default btn-lg" style="float: right; background-color:green;  color:white;">New spot</a>
+	</div>
+
+	<script type="text/javascript">
+		showDrinks();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
